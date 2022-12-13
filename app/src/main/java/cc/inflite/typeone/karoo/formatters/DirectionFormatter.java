@@ -1,18 +1,17 @@
 package cc.inflite.typeone.karoo.formatters;
 
-import android.content.Context;
-
 import androidx.annotation.NonNull;
 
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.service.BackgroundServiceClient;
+import io.hammerhead.sdk.v0.SdkContext;
 import io.hammerhead.sdk.v0.datatype.formatter.SdkFormatter;
 
 public class DirectionFormatter extends SdkFormatter {
 
-    private final Context context;
+    private final SdkContext context;
 
-    public DirectionFormatter(Context context) {
+    public DirectionFormatter(SdkContext context) {
         this.context = context;
     }
 

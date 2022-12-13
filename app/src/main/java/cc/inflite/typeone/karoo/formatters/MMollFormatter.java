@@ -1,20 +1,19 @@
 package cc.inflite.typeone.karoo.formatters;
 
-import android.content.Context;
-
 import androidx.annotation.NonNull;
 
 import java.util.Locale;
 
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.service.BackgroundServiceClient;
+import io.hammerhead.sdk.v0.SdkContext;
 import io.hammerhead.sdk.v0.datatype.formatter.SdkFormatter;
 
 public class MMollFormatter extends SdkFormatter {
 
-    private final Context context;
+    private final SdkContext context;
 
-    public MMollFormatter(Context context) {
+    public MMollFormatter(SdkContext context) {
         this.context = context;
     }
 
